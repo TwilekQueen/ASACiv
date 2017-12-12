@@ -2,7 +2,8 @@
 # Asari On-Action Events #
 ###########################
 
-#THIS EXPERIMENTAL SOLUTION IS HIGHLY UNSTBLE AND CURRENTLY DISABLED!
+#This changes the gender of all asari leaders to female on spawn
+#By request, the Gynogenetic trait can be used to extend this functionality to other species
 
 namespace = asari_leader
 
@@ -14,7 +15,10 @@ country_event = {
 
 	trigger = {
 		from = {
-			species = { is_species_class = ASA }
+			OR = {
+				species = { is_species_class = ASA }
+				species = { has_trait = trait_asari_gynogenetic }
+			}
 			gender = male
 		}
 	}
