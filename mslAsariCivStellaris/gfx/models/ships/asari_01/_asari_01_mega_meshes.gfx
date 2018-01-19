@@ -147,6 +147,38 @@ objectTypes = {
 		scale = 2.0		
 	}
 	
+	###############
+	## RINGWORLD ##
+	###############
+	
+	## HABITAT ##
+	pdxmesh = {
+		name = "asari_01_ringworld_habitat_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_ringworld_habitat.mesh"				
+		scale = 1.0
+	}
+	
+	## HABITAT ##
+	pdxmesh = {
+		name = "asari_01_ringworld_habitat_clouds_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_ringworld_habitat_clouds.mesh"				
+		scale = 1.0
+	}
+
+	## TECH ##
+	pdxmesh = {
+		name = "asari_01_ringworld_tech_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_ringworld_tech.mesh"
+		scale = 1.0
+	}
+
+	## SEAM ##
+	pdxmesh = {
+		name = "asari_01_ringworld_seam_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_ringworld_seam.mesh"				
+		scale = 1.0
+	}
+	
 	
 	
 	
