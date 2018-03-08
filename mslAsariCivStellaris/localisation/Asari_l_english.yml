@@ -46,11 +46,14 @@
  ####################################
  # Traits
  ####################################
- trait_asari_age:0 "Ageless"
- trait_asari_age_desc:0 "§LMembers of this species owe extreme longevity to cellular rejuvenation, but also go through many biological, psychological and social stages of maturity throughout their lives.§!\n"
+ trait_asari_age:0 "Amaranthine"
+ trait_asari_age_desc:0 "§LMembers of this species owe extreme longevity to cellular rejuvenation, which also makes them undergo many biological, psychological and social stages of maturity throughout their lives.§!\n"
  trait_asari_gynogenetic:0 "Gynogenetic"
  trait_asari_gynogenetic_desc:0 "§LThis species reproduces through a form of parthenogenesis in which they use the genetic map of alien species to diversify the genetic makeup of their offspring.§!\n"
  TRAIT_ASARI_GYNOGENETIC_EFFECT:0 "Base Growth Speed: §R-40%§!\nGrowth Speed From Alien Pops: §G+4%§!"
+ 
+ trait_asari_leader_resilientalt:0 "Ageless"
+ trait_asari_leader_resilientalt_desc:0 "This leader not only looks young for her age, she actually seems to mature at an unusually slow rate even by the standards of her species."
  ####################################
  # Civics
  ####################################
@@ -62,3 +65,8 @@
  ####################################
  asari_cross_fertilised:0 "Diversified Gene Pool"
  asari_cross_fertilised_xphi:0 "Diversified Gene Pool"
+ ####################################
+ # Events
+ ####################################
+ asari_leader.2031.name:0 "Substance Abuser"
+ asari_leader.2031.desc:0 "§R[deceased_leader.GetName]§!'s unhealthy lifestyle has come to its logical conclusion. After prolonged failure to report for duty, [deceased_leader.GetSheHe] was found dead. Investigation has determined overdose of an illicit substance to be the cause of death."

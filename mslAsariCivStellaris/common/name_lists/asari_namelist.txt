@@ -12,6 +12,8 @@ asari_names = {
 			Alissna Atrueri Nyxiir Viissnea Morrihin Muari Salezi Ditriari Noreenley Makemi Hellikse Sais Sashirah Keska Kynus Jeyx
 			Myrerthia Emakirae Myraix Samme Caliara Nugaes M'Kyaci Geluno T'Raos Kashana Zenrada D'Rotora Mido Tevessly Ri'Phiphea
 			T'Sosava Luakiis Thanis Isucnea Ditrifi Vethase Erthyny Vitire Treezu Maijin Diavah Calena Imelslea Liburo Levo M'Cryze
+			Aekaux Priovahin Sedeburo Kaenthus Mereli Averi Diezira Myrali V'Tilas Luollnea Elucthea Lere Isunda Shaucsa Giosne Zeess
+			Prieseta Ateza Myrizsy Iallise Imiztea Tirequa
 		}
 		corvette = {
 			Oseros Malvaes Lipera Satanna Eleclae Sebane Atane Leapnai Secana "Sister's Aid" Alankla "Banshee's Wail"  Kafinnea Driria
@@ -33,10 +35,15 @@ asari_names = {
 			Ushizus Kielsze Januava Halanysy
 		}
 		battleship = {
+			Ahlatania Kilitea Seunshi Cethyse Naslike Shisi Myxifete Eaanalea Aiestzia Seayya Ceryphia Eshlersa Lyneesthia Telyxphea
+			Eshlita Ishtharae Shieseus Selixha Keliylea Sarekane Numyrse Rililsha Sash'dazea Myrarix Iallilas Calira Lysixux Kydri
 			"Milla T'Asana" Clormoro "Borosmora T'Echeti" "Daeglarimman Tsu" Deliclarme Tassaranka Dlipaeli "Maeolpan T'Elechi" Benezia
-			"Goddess' Flail" "Matriarch's Wish" "Matriarch's Sacrifice" "Sovereign's Wrath" "Harbinger's Warning" "Ardat-Yakshi's Kiss"
-			Aekaux Priovahin Sedeburo Kaenthus Mereli Averi Diezira Myrali V'Tilas Luollnea Elucthea Lere Isunda Shaucsa Giosne Zeess
-			Prieseta Ateza Myrizsy Iallise Imiztea Tirequa "Ke'eki T'Betai"
+			"Goddess' Flail" "Matriarch's Wish" "Matriarch's Sacrifice" "Harbinger's Wrath" "Sovereign's Warning" "Ardat-Yakshi's Kiss"
+			"Ke'eki T'Betai"
+		}
+		titan = {
+			"Destiny Ascension" "Majesty Sublime" "Future Transcendent" "Eternity Immaculate" "Miracle Infinity" "Perfection Dominant"
+			"Halcyon Promise" "Eternity Vigilance" "Millennium Dawn" "Omniscient Infinite" "Awakening Symphony"
 		}
 		
 		science = {
@@ -53,10 +60,8 @@ asari_names = {
 
 		mining_station = {}
 		research_station = {}
-		wormhole_station = {}
 		#terraform_station = {}
 		observation_station = {}
-		outpost_station = {}
 
 		military_station_small = {
 			Lucedrasha Janniran Estharae Asey Atezea Irlik Unraux Atenus Norrinia Nisenth Dayrtia Ateava Priiaga Sanariir
@@ -78,65 +83,6 @@ asari_names = {
 			"Amithshi D'Bieyne" "In'meux Radira" "Ki'sate D'Veari" "Nularvley Miro" "Zeiyka D'Bielis" "Lidessma Coniva" "Luarir Kesir"
 			"Phethatea D'Coritis" "Kasharrae Jaria" "Voeezne Matoni" "Nulliha Ialliava" "Irollha Metis" "Pho'ra Diana" "Aleezux Edose"
 		}
-		SCX_Dreadnought = {
-			Ahlatania Kilitea Seunshi Cethyse Naslike Shisi Myxifete Eaanalea Aiestzia Seayya Ceryphia Eshlersa Lyneesthia Telyxphea
-			Eshlita Ishtharae Shieseus Selixha Keliylea Sarekane Numyrse Rililsha Sash'dazea Myrarix Iallilas Calira Lysixux Kydri
-		}
-		SCX_Superdreadnought = {
-			"Destiny Ascension" "Majesty Sublime" "Future Transcendent" "Eternity Immaculate" "Miracle Infinity" "Perfection Dominant"
-			"Halcyon Promise" "Eternity Vigilance" "Millenium Dawn" "Omniscient Infinite" "Awakening Symphony"
-		}
-		
-		#NSC classes
-		
-		StrikeCruiser = {
-			Yeeezmea Vaos Moumse Nythaus Shiari Tal'Mophea Ce'Phinea Shisir Moeenny Nurais Limanaya Moratari Halellshi Mirenthshi
-		}
-		Battlecruiser = {
-			Nefrane Cheizse Edaios Valikh Edava Jalarvphea Numeezzea Lorev Sheoraa Xanunny Januqua Nyeezte Tarymey Daal Iessatari
-		}
-		LightCarrier = {
-			"Faariux Beyne" "Nyxovara Caora" "Nointea Kal'Sasy" "Sarana M'Tasir" "Iessira Es'Irmia" "Edoni D'Bieria" "Ledase Jenes"
-			"Amithshi D'Bieyne" "In'meux Radira" "Ki'sate D'Veari" "Nularvley Miro" "Zeiyka D'Bielis" "Lidessma Coniva" "Luarir Kesir"
-			"Phethatea D'Coritis" "Kasharrae Jaria" "Voeezne Matoni" "Nulliha Ialliava" "Irollha Metis" "Pho'ra Diana" "Aleezux Edose"
-		}
-		Carrier = {
-			"Nuekazea Moraara" "Freezithia Genrius" "Januyne Lyslerga" "Thanoci Letenthze" "Stayxelia Januris" "Eresphea Sedeli"
-			"Sarulmia Kyor" "Xaeesthea Jannila" "Tevthahin Skatari" "Keinmia Dritis" "Holtha M'Losava" "Falellzea Janiana"
-			"Limetsa T'Keis" "Lenese Maiza" "Poisa Arteara" "Yerimey T'Scaria" "Geley T'Scasi" "Ceessir D'Kyfi" "Lalerzia D'Biera"
-		}
-		Dreadnought = {
-			Ahlatania Kilitea Seunshi Cethyse Naslike Shisi Myxifete Eaanalea Aiestzia Seayya Ceryphia Eshlersa Lyneesthia Telyxphea
-		}
-		Superdreadnought = {
-			Eshlita Ishtharae Shieseus Selixha Keliylea Sarekane Numyrse Rililsha Sash'dazea Myrarix Iallilas Calira Lysixux Kydri
-		}
-		Flagship = {
-			"Destiny Ascension" "Majesty Sublime" "Future Transcendent" "Eternity Immaculate" "Miracle Infinity" "Perfection Dominant"
-			"Halcyon Promise" "Eternity Vigilance" "Millenium Dawn" "Omniscient Infinite" "Awakening Symphony"
-		}
-		
-		Powerstation = {
-			T'safi T'eari T'natis T'meros T'haari M'liori Iessani Janniris Thanosava Janniios Iessani Merera Iayma
-		}
-		Miningbase = {
-			Atetora Genrilia Yeiratea Jonryshi Semi Maizea Genife Keezsy Dirus Loqua Hirius Suarlea Jengaa Lidfin
-		}
-		SensorStation = {
-			Ceun Mura Imel Iete Muix Lolis Sana Mylis Moshi Kymi Pesan Helito Shiza Rute Atero
-		}
-		Drydock = {
-			Umorau Aveos Atrula Ieran Iallios Calesus Saluci Noora Arrao Deulmey Poreyly Nyiyra Asyxra 
-		}
-		
-		military_station_xlarge = {
-			Moyrne Porthahin Ditriios Numina Nuralyt Glaia Narassda Sulaley Ledare Eroses Lena Mirumrae Lymirae Teseezly
-		}
-		Headquarters = {
-			"Kiollzea V'Moze" "Visthane M'Toava" "Revrimea T'Reeri" "Miriraa T'Saor" "Por'yathea Iafi" "Kaslisa Leto" "Ar'sha Hesir"
-			"Kaalsha T'Earis" "Kal'ires T'Vare" "Faesna M'Kyaqua" "Pheenthrae Radiana" "Sifinsha M'Lioara" "Ea'yate Daliana"
-		}
-		
 	}
 
 	fleet_names = {

@@ -1,10 +1,17 @@
+###########################
+# Asari On-Action Events #
+###########################
+
+### Key: TGGS = T(type) G(group) S(subgroup)
+
 namespace = asari_setup
 
 ### Hidden Game Start Event
+### This alters the starting conditions based on civics 
 
-### Empire init - add technologies
+# Biotic Evolution - add Psionic Theory
 country_event = {
-	id = asari_setup.1
+	id = asari_setup.101
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -17,6 +24,7 @@ country_event = {
 
 ### This event makes all Asari empires identify as the same species
 ### Contributed by had
+### Currently unused due to errors
 
 #country_event = {
 #    id = asari_setup.2

@@ -1,5 +1,5 @@
-@frame_scale = 0.9
-@frame_size = 12.0
+@frame_scale = 0.7
+@frame_size = 15.0
 
 ##################         	 CRUISER           ########################
 
@@ -112,24 +112,33 @@ entity = {
 # MID SECTION #
 ###############
 
-entity = {
+entity = {	#Hangar Core
 	name = "asari_01_cruiser_mid_S2HB_entity"
-	pdxmesh = "asari_01_specialcruiser1_mesh"
+	pdxmesh = "asari_01_cruiser2_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-	}	
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" state_time = 5 }
 }
 
-entity = {
+entity = {	#Artillery Core
 	name = "asari_01_cruiser_mid_L1M1_entity"
-	pdxmesh = "asari_01_science2_mesh"
+	pdxmesh = "asari_01_cruiser4_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -144,7 +153,7 @@ entity = {
 	}
 }
 
-entity = {
+entity = {	#Broadside Core
 	name = "asari_01_cruiser_mid_M3_entity"
 	pdxmesh = "asari_01_cruiser1_mesh"
 	
@@ -167,18 +176,24 @@ entity = {
 	}
 }
 
-entity = {
+entity = {	#Torpedo Core
 	name = "asari_01_cruiser_mid_M2S2_entity"
-	pdxmesh = "asari_01_specialcruiser2_mesh"
+	pdxmesh = "asari_01_cruiser3_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
 }
 

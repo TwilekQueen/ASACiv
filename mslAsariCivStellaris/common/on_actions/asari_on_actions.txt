@@ -1,26 +1,40 @@
 # This file handles all startup triggers for the Asari.
 # Events are definied in their own folder
 
+# called during empire initialization when starting a new game
+# scope: country
 empire_init_add_technologies = {
 	events = {
-		asari_setup.1
+		asari_setup.101
 	}
 }
 
+# scope: none
 #on_game_start = {
 #	events = {
 #		asari_setup.2
 #	}
 #}
 
+# scope: none
 on_monthly_pulse = {
 	events = {
-		asari_pop.1
+		asari_pop.101
 	}
 }
 
+# scope: none
+on_decade_pulse = {
+	events = {
+		asari_leader.202
+	}
+}
+
+# a new leader is generated for an empire, to be available for recruitment
+# scope: country, from: leader
 on_leader_spawned = {
 	events = {
-		asari_leader.1
+		asari_leader.101
+		asari_leader.201
 	}
 }

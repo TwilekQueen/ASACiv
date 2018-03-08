@@ -1,5 +1,5 @@
-@frame_scale = 0.9
-@frame_size = 8.0
+@frame_scale = 0.7
+@frame_size = 10.0
 
 ###################            DESTROYER             ########################
 
@@ -61,50 +61,27 @@ entity = {
 
 # BOW
 
-#NOT USED AT PRESENT
-entity = {
+entity = {	#Artillery Bow
 	name = "asari_01_destroyer_bow_L1_entity"
-	pdxmesh = "asari_01_empty_mesh"
-	locator = { name = "large_gun_01"	position = { 0 0.75 -5 } }
-}
-
-entity = {
-	name = "asari_01_destroyer_bow_M1S2_entity"
-	pdxmesh = "asari_01_empty_mesh"
-	locator = { name = "small_gun_01"	position = { 2.5 .75 -5 } }
-	locator = { name = "small_gun_02"	position = { -2.5 .75 -5 } }
-	locator = { name = "medium_gun_01"	position = { 0 .75 -5 } }
-}
-
-entity = {
-	name = "asari_01_destroyer_bow_S3_entity"
-	pdxmesh = "asari_01_empty_mesh"
-	locator = { name = "small_gun_01"	position = { 0 3 -0.8 } }
-	locator = { name = "small_gun_02"	position = { 2.5 .75 -5 } }
-	locator = { name = "small_gun_03"	position = { -2.5 .75 -5 } }
-}
-
-# STERN
-
-entity = {
-	name = "asari_01_destroyer_stern_S2_entity"
-	pdxmesh = "asari_01_destroyer1_mesh"
+	#pdxmesh = "asari_01_empty_mesh"
+	#locator = { name = "large_gun_01"	position = { 0 0.75 -5 } }
+	pdxmesh = "asari_01_destroyer3_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
-	state = { name = "death" state_time = 5 }
-
 }
 
-entity = {
-	name = "asari_01_destroyer_stern_M1_entity"
+entity = {	#Gunship Bow
+	name = "asari_01_destroyer_bow_M1S2_entity"
 	pdxmesh = "asari_01_destroyer2_mesh"
 	
 	default_state = "idle"
@@ -126,4 +103,38 @@ entity = {
 		
 	}
 	state = { name = "death" state_time = 5 }
+}
+
+entity = {	#Picket Ship Bow
+	name = "asari_01_destroyer_bow_S3_entity"
+	pdxmesh = "asari_01_destroyer1_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" state_time = 5 }
+}
+
+# STERN
+
+entity = {
+	name = "asari_01_destroyer_stern_S2_entity"
+	pdxmesh = "asari_01_empty_mesh"
+	locator = { name = "small_gun_01"	position = { -2.5 .75 -5 } }
+	locator = { name = "small_gun_02"	position = { 2.5 .75 -5 } }
+	#locator = { name = "small_gun_03"	position = { 0 3 -0.8 } }
+}
+
+entity = {
+	name = "asari_01_destroyer_stern_M1_entity"
+	pdxmesh = "asari_01_empty_mesh"
+	#locator = { name = "small_gun_01"	position = { 2.5 .75 -5 } }
+	#locator = { name = "small_gun_02"	position = { -2.5 .75 -5 } }
+	locator = { name = "medium_gun_01"	position = { 0 .75 -5 } }
 }

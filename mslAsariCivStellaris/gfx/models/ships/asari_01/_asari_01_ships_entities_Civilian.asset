@@ -24,15 +24,13 @@
 
 entity = {
 	name = "asari_01_bomber_entity"	
-	#pdxmesh = "asari_01_bomber_mesh"
-	pdxmesh = "asari_01_bomber2_mesh"
+	pdxmesh = "asari_01_bomber_mesh"
 	scale = 1.1
 }
 
 entity = {
 	name = "asari_01_fighter_entity"	
-	#pdxmesh = "asari_01_fighter_mesh"
-	pdxmesh = "asari_01_fighter2_mesh"
+	pdxmesh = "asari_01_fighter_mesh"
 	scale = 1.4
 }
 

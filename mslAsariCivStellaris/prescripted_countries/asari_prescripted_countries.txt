@@ -119,7 +119,7 @@ asarirepublics_civ = {
 		}
 		colors = {
 			"indigo"
-			"black"
+			"indigo"
 			"null"
 			"null"
 		}

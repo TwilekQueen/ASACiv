@@ -1,5 +1,5 @@
-@frame_scale = 1.1
-@frame_size = 20.0
+@frame_scale = 1.0
+@frame_size = 24.0
 
 ##################         	 BATTLESHIP           ########################
 
@@ -31,7 +31,7 @@ entity = {
 		event = { time = 6.5 node = "explosion_locator_05" particle = "avian_small_ship_explosion_particle" }
 		event = { time = 6.5 node = "explosion_locator_05" particle = "ship_burn_particle" }
 		
-		event = { time = 0.0 particle = "avian_01_large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+		event = { time = 0.0 particle = "asari_01_capital_explosion_particle" sound = { soundeffect = ship_destroyed } }
 	}
 	
 	scale = @frame_scale
@@ -46,11 +46,11 @@ entity = {
 # BOW
 entity = {
 	name = "asari_01_battleship_bow_L1M1S2_entity"
-	pdxmesh = "asari_01_empty_mesh"
-	locator = { name = "large_gun_01"	position = { -12 2.5 5 } }
-	locator = { name = "medium_gun_01"	position = { 12 2.5 5 } }
-	locator = { name = "small_gun_01"	position = { 9.5 2 3 } }
-	locator = { name = "small_gun_02"	position = { -9.5 2 3 } }
+	pdxmesh = "asari_01_battleships_weapons_bow_mesh"
+	#locator = { name = "large_gun_01"	position = { -12 2.5 5 } }
+	#locator = { name = "medium_gun_01"	position = { 12 2.5 5 } }
+	#locator = { name = "small_gun_01"	position = { 9.5 2 3 } }
+	#locator = { name = "small_gun_02"	position = { -9.5 2 3 } }
 }
 
 entity = {
@@ -66,18 +66,18 @@ entity = {
 
 entity = {
 	name = "asari_01_battleship_bow_L2_entity"
-	pdxmesh = "asari_01_empty_mesh"
-	locator = { name = "large_gun_01"	position = { -12 2.5 5 } }
-	locator = { name = "large_gun_02"	position = { 12 2.5 5 } }
+	pdxmesh = "asari_01_battleships_weapons_bow_mesh"
+	#locator = { name = "large_gun_01"	position = { -12 2.5 5 } }
+	#locator = { name = "large_gun_02"	position = { 12 2.5 5 } }
 }
 
 entity = {
 	name = "asari_01_battleship_bow_M1S2SHB_entity"
-	pdxmesh = "asari_01_empty_mesh"
-	locator = { name = "medium_gun_01"	position = { -12 2 5 } }
-	locator = { name = "small_gun_01"	position = { 9.5 2.0 3 } }
-	locator = { name = "small_gun_02"	position = { -9.5 2.0 3 } }
-	locator = { name = "strike_craft_locator_01"	position = { 0 -2 -3 } }
+	pdxmesh = "asari_01_battleships_weapons_bow_mesh"
+	#locator = { name = "medium_gun_01"	position = { -12 2 5 } }
+	#locator = { name = "small_gun_01"	position = { 9.5 2.0 3 } }
+	#locator = { name = "small_gun_02"	position = { -9.5 2.0 3 } }
+	#locator = { name = "strike_craft_locator_01"	position = { 0 -2 -3 } }
 }
 
 entity = {
@@ -106,14 +106,14 @@ entity = {
 
 entity = {
 	name = "asari_01_battleship_bow_XL1_entity"
-	pdxmesh = "asari_01_empty_mesh"
-	locator = { name = "xl_gun_01"	position = { 0 2 -1 } }
+	pdxmesh = "asari_01_battleships_weapons_bow_mesh"
+	#locator = { name = "xl_gun_01"	position = { 0 2 -1 } }
 	
 	# XL weapon windup locator names: xl_windup_1-8
 }
 
 #MID
-entity = {
+entity = {	#OBSOLETE, DON'T USE!
 	name = "asari_01_battleship_mid_L2S4_entity"
 	pdxmesh = "asari_01_cruiser2_mesh"
 	
@@ -138,7 +138,7 @@ entity = {
 
 }
 
-entity = {
+entity = {	#OBSOLETE, DON'T USE!
 	name = "asari_01_battleship_mid_L1M4_entity"
 	pdxmesh = "asari_01_cruiser2_mesh"
 	
@@ -163,37 +163,51 @@ entity = {
 
 }
 
-entity = {
+entity = {	#Broadside Core
 	name = "asari_01_battleship_mid_L2M2_entity"
-	pdxmesh = "asari_01_cruiser2_mesh"
+	pdxmesh = "asari_01_battleship2_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle" state_time = 5
+	state = { name = idle	state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
-	state = { name = "moving" state_time = 5
+	state = { name = moving	state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
-	state = { name = "death" state_time = 5 }
-	
+	state = { name = "death"
+		event = { time = 0.00 particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+		event = { time = 1.00 node = "explosion_locator1" particle = "ship_burn_particle" }
+		event = { time = 1.00 node = "explosion_locator1" particle = "ship_explosion_particle" }
+		event = { time = 1.70 node = "explosion_locator2" particle = "ship_burn_particle" }
+		event = { time = 1.70 node = "explosion_locator2" particle = "ship_explosion_particle" }
+		event = { time = 3.70 node = "explosion_locator3" particle = "ship_burn_particle" }
+		event = { time = 3.70 node = "explosion_locator3" particle = "ship_explosion_particle" }
+		event = { time = 6.00 node = "explosion_locator4" particle = "ship_burn_particle" }
+		event = { time = 6.00 node = "explosion_locator4" particle = "ship_explosion_particle" }
+		event = { time = 6.23 node = "explosion_locator6" particle = "ship_explosion_air_vent_particle" }
+		event = { time = 6.23 node = "explosion_locator6" particle = "ship_burn_particle" }
+		event = { time = 7.30 node = "explosion_locator5" particle = "ship_burn_particle" }
+		event = { time = 7.30 node = "explosion_locator5" particle = "ship_explosion_particle" }
+		event = { time = 7.60 node = "explosion_locator6" particle = "ship_explosion_air_vent_particle" }
+		event = { time = 7.60 node = "explosion_locator6" particle = "ship_burn_particle" }
+		event = { time = 11.2 node = "explosion_locator7" particle = "ship_explosion_particle" }
+		event = { time = 12.1 node = "explosion_locator7" particle = "ship_explosion_air_vent_particle" }
+		event = { time = 12.1 node = "explosion_locator7" particle = "ship_burn_particle" }
+	}
 }
 
-entity = {
+entity = {	#Artillery Core
 	name = "asari_01_battleship_mid_L3_entity"
-	pdxmesh = "asari_01_cruiser2_mesh"
+	pdxmesh = "asari_01_battleship1_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle" state_time = 5
+	state = { name = idle	state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -201,7 +215,7 @@ entity = {
 		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
-	state = { name = "moving" state_time = 5
+	state = { name = moving	state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -209,40 +223,66 @@ entity = {
 		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
-	state = { name = "death" state_time = 5 }
+	state = { name = "death"
+	event = { time = 0.00 particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+	event = { time = 1.00 node = "explosion_locator1" particle = "ship_burn_particle" }
+	event = { time = 1.00 node = "explosion_locator1" particle = "ship_explosion_particle" }
+	event = { time = 1.70 node = "explosion_locator2" particle = "ship_burn_particle" }
+	event = { time = 1.70 node = "explosion_locator2" particle = "ship_explosion_particle" }
+	event = { time = 3.70 node = "explosion_locator3" particle = "ship_burn_particle" }
+	event = { time = 3.70 node = "explosion_locator3" particle = "ship_explosion_particle" }
+	event = { time = 6.00 node = "explosion_locator4" particle = "ship_burn_particle" }
+	event = { time = 6.00 node = "explosion_locator4" particle = "ship_explosion_particle" }
+	event = { time = 7.30 node = "explosion_locator5" particle = "ship_burn_particle" }
+	event = { time = 7.30 node = "explosion_locator5" particle = "ship_explosion_particle" }
+	}
 }
 
-entity = {
+entity = {	#Hangar Core
 	name = "asari_01_battleship_mid_M4SHB_entity"
-	pdxmesh = "asari_01_cruiser2_mesh"
+	pdxmesh = "asari_01_battleship2_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle" state_time = 5
+	state = { name = idle	state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
-	state = { name = "moving" state_time = 5
+	state = { name = moving	state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
-	state = { name = "death" state_time = 5 }
-	
+	state = { name = "death"
+		event = { time = 0.00 particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+		event = { time = 1.00 node = "explosion_locator1" particle = "ship_burn_particle" }
+		event = { time = 1.00 node = "explosion_locator1" particle = "ship_explosion_particle" }
+		event = { time = 1.70 node = "explosion_locator2" particle = "ship_burn_particle" }
+		event = { time = 1.70 node = "explosion_locator2" particle = "ship_explosion_particle" }
+		event = { time = 3.70 node = "explosion_locator3" particle = "ship_burn_particle" }
+		event = { time = 3.70 node = "explosion_locator3" particle = "ship_explosion_particle" }
+		event = { time = 6.00 node = "explosion_locator4" particle = "ship_burn_particle" }
+		event = { time = 6.00 node = "explosion_locator4" particle = "ship_explosion_particle" }
+		event = { time = 6.23 node = "explosion_locator6" particle = "ship_explosion_air_vent_particle" }
+		event = { time = 6.23 node = "explosion_locator6" particle = "ship_burn_particle" }
+		event = { time = 7.30 node = "explosion_locator5" particle = "ship_burn_particle" }
+		event = { time = 7.30 node = "explosion_locator5" particle = "ship_explosion_particle" }
+		event = { time = 7.60 node = "explosion_locator6" particle = "ship_explosion_air_vent_particle" }
+		event = { time = 7.60 node = "explosion_locator6" particle = "ship_burn_particle" }
+		event = { time = 11.2 node = "explosion_locator7" particle = "ship_explosion_particle" }
+		event = { time = 12.1 node = "explosion_locator7" particle = "ship_explosion_air_vent_particle" }
+		event = { time = 12.1 node = "explosion_locator7" particle = "ship_burn_particle" }
+	}
 }
 
-entity = {
+entity = {	#Carrier Core
 	name = "asari_01_battleship_mid_S4LHB_entity"
-	pdxmesh = "asari_01_cruiser2_mesh"
+	pdxmesh = "asari_01_battleship1_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle" state_time = 5
+	state = { name = idle	state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -250,7 +290,7 @@ entity = {
 		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
-	state = { name = "moving" state_time = 5
+	state = { name = moving	state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -258,16 +298,27 @@ entity = {
 		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
-	state = { name = "death" state_time = 5 }
-
+	state = { name = "death"
+	event = { time = 0.00 particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+	event = { time = 1.00 node = "explosion_locator1" particle = "ship_burn_particle" }
+	event = { time = 1.00 node = "explosion_locator1" particle = "ship_explosion_particle" }
+	event = { time = 1.70 node = "explosion_locator2" particle = "ship_burn_particle" }
+	event = { time = 1.70 node = "explosion_locator2" particle = "ship_explosion_particle" }
+	event = { time = 3.70 node = "explosion_locator3" particle = "ship_burn_particle" }
+	event = { time = 3.70 node = "explosion_locator3" particle = "ship_explosion_particle" }
+	event = { time = 6.00 node = "explosion_locator4" particle = "ship_burn_particle" }
+	event = { time = 6.00 node = "explosion_locator4" particle = "ship_explosion_particle" }
+	event = { time = 7.30 node = "explosion_locator5" particle = "ship_burn_particle" }
+	event = { time = 7.30 node = "explosion_locator5" particle = "ship_explosion_particle" }
+	}
 }
 
 # STERN
 
 entity = {
 	name = "asari_01_battleship_stern_L1_entity"
-	pdxmesh = "asari_01_empty_mesh"
-	locator = { name = "large_gun_01"	position = { 0 4.0 -21.0 } }
+	pdxmesh = "asari_01_battleships_weapons_stern_mesh"
+	#locator = { name = "large_gun_01"	position = { 0 4.0 -8.0 } }
 	
 }
 
@@ -282,9 +333,9 @@ entity = {
 
 entity = {
 	name = "asari_01_battleship_stern_M2_entity"
-	pdxmesh = "asari_01_empty_mesh"
-	locator = { name = "medium_gun_01"	position = { -12 2.5 -5 } }
-	locator = { name = "medium_gun_02"	position = { 12 2.5 -5 } }
+	pdxmesh = "asari_01_battleships_weapons_stern_mesh"
+	#locator = { name = "medium_gun_01"	position = { -12 2.5 -5 } }
+	#locator = { name = "medium_gun_02"	position = { 12 2.5 -5 } }
 }
 
 entity = {

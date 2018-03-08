@@ -1,65 +1,9 @@
 ASA = {
-	Siariai = {
-		name = Siari
-		plural = Siariai 
-		home_planet = Laariux
-		home_system = Thanorix
-		name_list = "asari_names"
-	}
-	
-	Caliris = {
-		name = Caliris
-		plural = Caliri
-		home_planet = Sashixhin
-		home_system = Noqua
-		name_list = "asari_names"
-	}
-	
-	Vaessme = {
-		name = Vaessme
-		plural = Vaessme
-		home_planet = Trearu
-		home_system = Heliri
-		name_list = "asari_names"
-	}
-	
-	Asenthe = {
-		name = Asenthe
-		plural = Asenthe
-		home_planet = Nulees
-		home_system = Zemedrate
-		name_list = "asari_names"
-	}
-	
-	Serai = {
-		name = Seri
-		plural = Serai
-		home_planet = Merese
-		home_system = Ayxaha
-		name_list = "asari_names"
-	}
-	
-	Seyxerae = {
-		name = Seyx
-		plural = Seyxerae
-		home_planet = Shanis
-		home_system = Pomeu
-		name_list = "asari_names"
-	}
-	
-	Iallini = {
-		name = Ialli
-		plural = Iallini
-		home_planet = Geinlea
-		home_system = Nieenta
-		name_list = "asari_names"
-	}
-	
-	Disi = {
-		name = Disi
-		plural = Disi
-		home_planet = Mave
-		home_system = Nyxeemna
+	asari_species = {
+		name = "Asari"
+		plural = "Asari"
+		home_planet = "Thessia"
+		home_system = "Parnitha"
 		name_list = "asari_names"
 	}
 }

@@ -1,4 +1,4 @@
-@frame_scale = 0.9
+@frame_scale = 0.8
 @frame_size = 6.0
 
 ######################           CORVETTE             ########################
@@ -49,7 +49,7 @@ entity = {
 	}
 }
 
-entity = {
+entity = {	#Torpedo Boat
 	name = "asari_01_corvette_M1S1_entity"
 	pdxmesh = "asari_01_corvette2_mesh"
 	
@@ -73,10 +73,9 @@ entity = {
 	}
 }
 
-entity = {
+entity = {	#Interceptor
 	name = "asari_01_corvette_S3_entity"
-	#pdxmesh = "asari_01_corvette1_mesh"
-	pdxmesh = "asari_01_corvette3_mesh"
+	pdxmesh = "asari_01_corvette1_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -98,7 +97,7 @@ entity = {
 	}
 }
 
-entity = {
+entity = {	#OBSOLETE, DON'T USE!
 	name = "asari_01_corvette_S1_entity"
 	pdxmesh = "asari_01_corvette2_mesh"
 	

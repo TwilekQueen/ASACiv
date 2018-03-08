@@ -14,8 +14,8 @@ trait_asari_age = {
 	
 	modifier = {
 		leader_age = 900
-		leader_influence_cost = 1.00
-		species_leader_exp_gain = -0.25
+		leader_cost = 1.00
+		#species_leader_exp_gain = -0.25
 	}
 	opposites = { "trait_enduring" "trait_venerable" "trait_fleeting" "trait_quick_learners" "trait_slow_learners" }
 }
@@ -31,4 +31,26 @@ trait_asari_gynogenetic = {
 	}
 	custom_tooltip = TRAIT_ASARI_GYNOGENETIC_EFFECT
 	opposites = { "trait_slow_breeders" "trait_rapid_breeders" }
+}
+
+##################
+# Leader Traits  #
+##################
+
+trait_asari_leader_resilientalt = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_resilient.dds"
+	self_modifier = {
+		#leader_skill_levels = 1 NOT WORKKING settling for a scaled up version of Resilient instead
+		leader_age = 100
+	}
+	leader_potential_add = {
+		NOT = { leader_class = ruler}
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+	}
+	leader_trait = yes
+	opposites = { "leader_trait_substance_abuser" "leader_trait_resilient" }
+	initial = no
+	randomized = no
 }

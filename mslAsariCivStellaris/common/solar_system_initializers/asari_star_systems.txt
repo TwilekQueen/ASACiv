@@ -33,6 +33,16 @@ asr_system_initializer = {
 		orbit_angle = 1
 		size = 15
 		has_ring = no
+		
+		init_effect = {
+			prevent_anomaly = yes
+			orbital_deposit_tile = {
+				clear_deposits = yes
+				add_deposit = d_vast_energy_deposit
+			}
+			set_planet_flag = starting_mining_target
+			set_planet_flag = starting_deposit
+		}
 	}
 	
 	planet = {
@@ -42,6 +52,15 @@ asr_system_initializer = {
 		orbit_angle = 15
 		size = 9
 		has_ring = no
+		
+		init_effect = {
+			prevent_anomaly = yes
+			orbital_deposit_tile = {
+				clear_deposits = yes
+				add_deposit = d_rich_physics_deposit
+			}
+			set_planet_flag = starting_deposit
+		}
 	}
 	
 	planet = {
@@ -73,6 +92,11 @@ asr_system_initializer = {
 		size = 14
 		has_ring = no
 		entity = "barren_planet_02_entity"
+		
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
 	}
 	
 	change_orbit = 25
@@ -82,6 +106,43 @@ asr_system_initializer = {
 		class = random_asteroid
 		orbit_distance = 0
 		orbit_angle = { min = 40 max = 100 }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
+	}
+	
+	planet = {
+		class = random_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 40 max = 100 }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			orbital_deposit_tile = {
+				clear_deposits = yes
+				add_deposit = d_rich_mineral_deposit
+			}
+			set_planet_flag = starting_deposit
+		}
+	}
+	
+	planet = {
+		name = "Lucen"
+		class = random_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 40 max = 100 }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			orbital_deposit_tile = {
+				clear_deposits = yes
+				add_deposit = d_vast_mineral_deposit
+			}
+			set_planet_flag = starting_deposit
+			set_planet_flag = starting_mining_target
+		}
 	}
 	
 	planet = {
@@ -92,6 +153,11 @@ asr_system_initializer = {
 		size = 30
 		has_ring = no
 		entity = "gas_giant_05_entity"
+		
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
 	}
 	
 	planet = {
@@ -102,6 +168,15 @@ asr_system_initializer = {
 		size = 35
 		has_ring = yes
 		entity = "gas_giant_01_entity"
+		
+		init_effect = {
+			prevent_anomaly = yes
+			orbital_deposit_tile = {
+				clear_deposits = yes
+				add_deposit = d_rich_energy_deposit
+			}
+			set_planet_flag = starting_deposit
+		}
 	}
 	
 	planet = {
@@ -113,12 +188,27 @@ asr_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_02_entity"
 		
+		init_effect = {
+			prevent_anomaly = yes
+			orbital_deposit_tile = {
+				clear_deposits = yes
+				add_deposit = d_rich_engineering_deposit
+			}
+			set_planet_flag = starting_deposit
+			set_planet_flag = starting_research_target
+		}
+		
 		moon = {
 			name = "Tevura I"
 			count = 1
 			class = random_non_colonizable
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 13
+			
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
 		}
 		
 		moon = {
@@ -127,6 +217,11 @@ asr_system_initializer = {
 			class = random_non_colonizable
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 0
+			
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
 		}
 		
 		moon = {
@@ -135,6 +230,11 @@ asr_system_initializer = {
 			class = random_non_colonizable
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 0
+			
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
 		}
 	}
 	
@@ -632,6 +732,16 @@ asi_system_initializer = {
 		orbit_angle = 1
 		size = 16
 		has_ring = no
+		
+		init_effect = {
+			prevent_anomaly = yes
+			orbital_deposit_tile = {
+				clear_deposits = yes
+				add_deposit = d_vast_energy_deposit
+			}
+			set_planet_flag = starting_deposit
+			set_planet_flag = starting_mining_target
+		}
 	}
 	
 	planet = {
@@ -648,6 +758,7 @@ asi_system_initializer = {
 				clear_deposits = yes
 				add_deposit = d_rich_mineral_deposit
 			}
+			set_planet_flag = starting_deposit
 		}
 	}
 	
@@ -679,6 +790,15 @@ asi_system_initializer = {
 		orbit_angle = 180
 		size = 10
 		has_ring = no
+		
+		init_effect = {
+			prevent_anomaly = yes
+			orbital_deposit_tile = {
+				clear_deposits = yes
+				add_deposit = d_rich_physics_deposit
+			}
+			set_planet_flag = starting_deposit
+		}
 	}
 	
 	change_orbit = 24
@@ -688,6 +808,11 @@ asi_system_initializer = {
 		class = random_asteroid
 		orbit_distance = 0
 		orbit_angle = { min = 40 max = 100 }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+		}
 	}
 	
 	planet = {
@@ -702,8 +827,10 @@ asi_system_initializer = {
 			prevent_anomaly = yes
 			orbital_deposit_tile = {
 				clear_deposits = yes
-				add_deposit = d_rich_mineral_deposit
+				add_deposit = d_vast_mineral_deposit
 			}
+			set_planet_flag = starting_deposit
+			set_planet_flag = starting_mining_target
 		}
 	}
 	
@@ -720,8 +847,10 @@ asi_system_initializer = {
 			prevent_anomaly = yes
 			orbital_deposit_tile = {
 				clear_deposits = yes
-				add_deposit = d_energy_deposit
+				add_deposit = d_rich_physics_deposit
 			}
+			set_planet_flag = starting_deposit
+			set_planet_flag = starting_research_target
 		}
 	}
 	
@@ -740,6 +869,7 @@ asi_system_initializer = {
 				clear_deposits = yes
 				add_deposit = d_rich_energy_deposit
 			}
+			set_planet_flag = starting_deposit
 		}
 	}
 	

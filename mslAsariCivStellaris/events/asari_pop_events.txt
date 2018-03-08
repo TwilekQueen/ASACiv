@@ -1,12 +1,17 @@
+###########################
+# Asari On-Action Events #
+###########################
+
+### Key: TGGS = T(type) G(group) S(subgroup)
+
 namespace = asari_pop
 
 ### Hidden On_Monthly_Pulse Event
-### EXPERIMENTAL. This controls the mechanics of the Parthenogenetic trait
-### Some bits are placeholders, pending 1.5 "Banks" population controls
-### REMINDER: "can_pop_procreate" should make it forward-compatible? Needs checking.
+### This controls the mechanics of the Gynogenetic trait
 
+# Check for alien pops and apply +growth to growing asari pops
 event = {
-	id = asari_pop.1
+	id = asari_pop.101
 	hide_window = yes
 	
 	is_triggered_only = yes

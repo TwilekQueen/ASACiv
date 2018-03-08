@@ -2,14 +2,16 @@
 # Asari On-Action Events #
 ###########################
 
-#This changes the gender of all asari leaders to female on spawn
-#By request, the Gynogenetic trait can be used to extend this functionality to other species
+### Key: TGGS = T(type) G(group) S(subgroup)
 
 namespace = asari_leader
 
+### This changes the gender of all asari leaders to female on spawn
+### By request, the Gynogenetic trait can be used to extend this functionality to other species
+
 # Ensure that all generated leaders are female
 country_event = {
-	id = asari_leader.1
+	id = asari_leader.101
 	is_triggered_only = yes
 	hide_window = yes
 
@@ -27,5 +29,103 @@ country_event = {
 		from = {
 			set_is_female = yes
 		}
+	}
+}
+
+#These events dynamically change the functionality or replace certain vanilla leader traits to something more applicable to asari
+
+# Replace Resilient with Long View
+country_event = {
+	id = asari_leader.201
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		from = {
+			has_trait = leader_trait_resilient
+		}
+	}
+
+	immediate = {
+		from = {
+			remove_trait = leader_trait_resilient
+			add_trait = trait_asari_leader_resilientalt
+		}
+	}
+}
+
+# Chance of dying if has Substance Abuser
+event = {
+	id = asari_leader.202
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_playable_country = {
+			limit = {
+				NOT = {
+					has_authority = auth_machine_intelligence
+				}
+			}
+			country_event = { id = asari_leader.203 random = 200 }
+		}
+	}
+}
+
+country_event = {
+	id = asari_leader.203
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			90 = { # 88% chance nothing happens
+			}
+			10 = {
+				#modifier = { # 50% chance if self preservation in effect
+				#	has_swapped_tradition = tr_synchronicity_self_preservation
+				#	factor = 0.5
+				#}
+				if = { # surveying scientist
+					limit = {
+						any_owned_leader = {
+							species = { has_trait = trait_asari_age }
+							has_trait = leader_trait_substance_abuser
+						}
+					}
+					random_owned_leader = {
+						limit = {
+							species = { has_trait = trait_asari_age }
+							has_trait = leader_trait_substance_abuser
+						}
+						save_event_target_as = deceased_leader
+						root = {
+							country_event = { id = asari_leader.2031 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = asari_leader.2031
+	title = asari_leader.2031.name
+	desc = asari_leader.2031.desc
+	picture = GFX_evt_space_funeral
+	show_sound = event_radio_chatter
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:deceased_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
 	}
 }

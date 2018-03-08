@@ -103,30 +103,14 @@ objectTypes = {
 	
 	pdxmesh = {
 		name = "asari_01_corvette1_mesh"
-		file = "gfx/models/ships/asari_01/asari_01_corvette1.mesh"
-		scale = 1.8
+		file = "gfx/models/ships/asari_01/asari_01_corvette1.mesh"	#CHERRYH SHUFFLE: asari_01_frigate.mesh -> asari_01_corvette1.mesh
+		scale = 1.6
 	}
 	
 	pdxmesh = {
 		name = "asari_01_corvette2_mesh"
 		file = "gfx/models/ships/asari_01/asari_01_corvette2.mesh"
 		scale = 2.2
-	}
-	
-	pdxmesh = {
-		name = "asari_01_corvette3_mesh"
-		file = "gfx/models/ships/asari_01/asari_01_frigate.mesh"
-		scale = 1.6
-	}
-	
-	#################
-	#### FRIGATE ####
-	#################
-	
-	pdxmesh = {
-		name = "asari_01_frigate_mesh"
-		file = "gfx/models/ships/asari_01/asari_01_frigate.mesh"
-		scale = 2.0
 	}
 	
 	########################
@@ -145,39 +129,37 @@ objectTypes = {
 		scale = 2.1
 	}
 	
+	pdxmesh = {
+		name = "asari_01_destroyer3_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_destroyer3.mesh"	#CHERRYH SHUFFLE: asari_01_specialcruiser2.mesh -> asari_01_destroyer3.mesh
+		scale = 1.2
+	}
+	
 	######################
 	#### NEW CRUISERS ####
 	######################
 	
 	pdxmesh = {
 		name = "asari_01_cruiser1_mesh"
-		file = "gfx/models/ships/asari_01/asari_01_cruiser.mesh"
-		scale = 2.0
+		file = "gfx/models/ships/asari_01/asari_01_cruiser1.mesh"
+		scale = 1.8
 	}
 	
 	pdxmesh = {
 		name = "asari_01_cruiser2_mesh"
 		file = "gfx/models/ships/asari_01/asari_01_cruiser2.mesh"
-		scale = 2.0
-	}
-	
-	## SPECIAL CRUISERS ##
-	
-	pdxmesh = {
-		name = "asari_01_specialcruiser1_mesh"
-		file = "gfx/models/ships/asari_01/asari_01_specialcruiser1.mesh"
-		scale = 1.4
+		scale = 1.8
 	}
 	
 	pdxmesh = {
-		name = "asari_01_specialcruiser2_mesh"
-		file = "gfx/models/ships/asari_01/asari_01_specialcruiser2.mesh"
-		scale = 1.75
+		name = "asari_01_cruiser3_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_cruiser3.mesh"	#CHERRYH SHUFFLE: asari_01_specialcruiser1.mesh -> asari_01_cruiser3.mesh
+		scale = 1.3
 	}
 	
 	pdxmesh = {
-		name = "asari_01_science2_mesh"
-		file = "gfx/models/ships/asari_01/asari_01_science2.mesh"
+		name = "asari_01_cruiser4_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_cruiser4.mesh"	#CHERRYH SHUFFLE: asari_01_science2.mesh -> asari_01_cruiser4.mesh
 		scale = 1.8
 	}
 	
@@ -207,6 +189,24 @@ objectTypes = {
 		scale = 1.5
 	}
 	
+	pdxmesh = {
+		name = "asari_01_battleship2_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_battleship2.mesh"	#CHERRYH SHUFFLE: asari_01_supercapital2.mesh -> asari_01_battleship2.mesh
+		scale = 0.9
+	}
+	
+	pdxmesh = {
+		name = "asari_01_battleships_weapons_bow_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_battleships_weapons_bow.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "asari_01_battleships_weapons_stern_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_battleships_weapons_stern.mesh"
+		scale = 1.0
+	}
+	
 	########################
 	#### SUPER CAPITALS ####
 	########################
@@ -219,8 +219,14 @@ objectTypes = {
 	
 	pdxmesh = {
 		name = "asari_01_supercapital2_mesh"
-		file = "gfx/models/ships/asari_01/asari_01_supercapital2.mesh"
-		scale = 0.9
+		file = "gfx/models/ships/asari_01/asari_01_supercapital2.mesh"	#CHERRYH SHUFFLE: the EXISTING asari_01_supercapital2.mesh repurposed into asari_01_battleship2.mesh, the NEW asari_01_supercapital2.mesh should be Destiny Ascension
+		scale = 1.5
+	}
+	
+	pdxmesh = {
+		name = "asari_01_supercapital2_weapons_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_supercapital2_weapons.mesh"	#Universal weapon setup mesh with preset locators for the Titan since it only uses one model 
+		scale = 1.5
 	}
 	
 	pdxmesh = {
@@ -235,13 +241,13 @@ objectTypes = {
 	
 	pdxmesh = {
 		name = "asari_01_science_mesh"
-		file = "gfx/models/ships/asari_01/asari_01_science3.mesh"
+		file = "gfx/models/ships/asari_01/asari_01_science.mesh"
 		scale = 1.2
 	}
 	
 	pdxmesh = {
 		name = "asari_01_transport_mesh"
-		file = "gfx/models/ships/asari_01/asari_01_newtransport.mesh"
+		file = "gfx/models/ships/asari_01/asari_01_transport.mesh"
 		scale = 0.7
 	}
 	
@@ -273,15 +279,15 @@ objectTypes = {
 	####### SMALL SHIPS (ASARI) #######
 	
 	pdxmesh = {
-		name = "asari_01_bomber2_mesh"
-		file = "gfx/models/ships/asari_01/asari_01_corvette1.mesh"
-		scale = 0.25
+		name = "asari_01_bomber_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_fighter1.mesh"
+		scale = 0.15
 	}
 	
 	pdxmesh = {
-		name = "asari_01_fighter2_mesh"
-		file = "gfx/models/ships/asari_01/asari_01_corvette1.mesh"
-		scale = 0.25
+		name = "asari_01_fighter_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_bomber1.mesh"
+		scale = 0.15
 	}
 	
 	#################################################
@@ -327,30 +333,6 @@ objectTypes = {
 	}
 	
 	####### SMALL SHIPS (AVIAN) #######	
-	
-	pdxmesh = {
-		name = "asari_01_bomber_mesh"
-		file = "gfx/models/ships/asari_01/asari_01_bomber.mesh"
-		scale = 1.0
-		meshsettings = {
-			texture_diffuse = "asari_01_bomber_diffuse.dds"
-			texture_normal = "asari_01_bomber_normal.dds"
-			texture_specular = "asari_01_bomber_specular.dds"
-			shader = "PdxMeshTerra"
-		}
-	}
-	
-		pdxmesh = {
-		name = "asari_01_fighter_mesh"
-		file = "gfx/models/ships/asari_01/asari_01_fighter.mesh"
-		scale = 1.0
-		meshsettings = {
-			texture_diffuse = "asari_01_fighter_diffuse.dds"
-			texture_normal = "asari_01_fighter_normal.dds"
-			texture_specular = "asari_01_fighter_specular.dds"
-			shader = "PdxMeshTerra"
-		}
-	}
 
 		pdxmesh = {
 		name = "asari_01_droppod_mesh"
