@@ -1,44 +1,46 @@
 ## Asari Corporate Interests
 asariillium_civ = {
 	name = "Asari Corporate Interests"
+	adjective = "Asari"
 	spawn_enabled = no # yes / no / always
+	#ignore_portrait_duplication = yes
 	
-	name_list = "asari_names"
 	ship_prefix = ""
+	
+	species = {
+		class = "ASA"
+		portrait = "asari"
+		name = "Asari"
+		plural = "Asari"
+		adjective = "Asari"
+		name_list = "asari_names"
+		trait = "trait_deviants"
+		trait = "trait_asari_gynogenetic"
+		trait = "trait_asari_age"
+		trait = "trait_charismatic"
+	}
 	
 	advisor_voice_type = "l_pacifist"
 	
-	species_name = "Asari"
-	species_plural = "Asari"
-	species_adjective = "Asari"
-	species_class = "ASA"
-	species_bio = ""
-	trait = "trait_deviants"
-	trait = "trait_asari_gynogenetic"
-	trait = "trait_asari_age"
-	trait = "trait_charismatic"
-	portrait = "asari"
-	adjective = "Asari"
+	room = "personality_peaceful_traders_room"
 	
 	authority = "auth_oligarchic"
 	civics = { "civic_asari_biotic_evo" "civic_corporate_dominion" }
 	government = gov_megacorporation
-	room = "personality_peaceful_traders_room"
 	
 	ethic = "ethic_xenophile"
 	ethic = "ethic_fanatic_materialist"
 	
 	flags = { asari_asi custom_start_screen }
-
-	weapon = "tech_mass_drivers_1"
-	ftl = wormhole
 	
 	planet_name = "Illium"
 	planet_class = "pc_continental"
-	system_name = "Tasale"
 	initializer = "asi_system_initializer"
+	system_name = "Tasale"
+	
 	graphical_culture = "asari_01"
 	city_graphical_culture = "asari_01"
+	
 	empire_flag = {
 		icon={
 			category = "asari_civ"
@@ -55,9 +57,10 @@ asariillium_civ = {
 			"null"
 		}
 	}
+	
 	ruler={
-		gender = female
 		name = "Selesta T'Zeala" #"Ishta Linnadhiel"
+		gender = female
 		portrait = "asari_1"
 		texture = 3
 		hair = 0
@@ -70,44 +73,46 @@ asariillium_civ = {
 ## Asari Republics
 asarirepublics_civ = {
 	name = "Asari Republics"
+	adjective = "Asari"
 	spawn_enabled = no # yes / no / always
+	#ignore_portrait_duplication = yes
 	
-	name_list = "asari_names"
 	ship_prefix = ""
+	
+	species = {
+		class = "ASA"
+		portrait = "asari"
+		name = "Asari"
+		plural = "Asari"
+		adjective = "Asari"
+		name_list = "asari_names"
+		trait = "trait_deviants"
+		trait = "trait_asari_gynogenetic"
+		trait = "trait_asari_age"
+		trait = "trait_charismatic"
+	}
 	
 	advisor_voice_type = "l_xenophile"
 	
-	species_name = "Asari"
-	species_plural = "Asari"
-	species_adjective = "Asari"
-	species_class = "ASA"
-	species_bio = ""
-	trait = "trait_deviants"
-	trait = "trait_asari_gynogenetic"
-	trait = "trait_asari_age"
-	trait = "trait_charismatic"
-	portrait = "asari"
-	adjective = "Asari"
+	room = "personality_metalheads_room"
 	
 	authority = "auth_democratic"
 	civics = { "civic_asari_biotic_evo" "civic_parliamentary_system" }
 	government = gov_direct_democracy
-	room = "personality_metalheads_room"
 	
 	ethic = "ethic_fanatic_xenophile"
 	ethic = "ethic_egalitarian"
 	
 	flags = { asari_asr custom_start_screen }
-
-	weapon = "tech_mass_drivers_1"
-	ftl = wormhole
 	
 	planet_name = "Thessia"
 	planet_class = "pc_continental"
-	system_name = "Parnitha"
 	initializer="asr_system_initializer"
+	system_name = "Parnitha"
+	
 	graphical_culture = "asari_01"
 	city_graphical_culture = "asari_01"
+	
 	empire_flag = {
 		icon={
 			category = "asari_civ"
@@ -124,9 +129,10 @@ asarirepublics_civ = {
 			"null"
 		}
 	}
+	
 	ruler={
-		gender = female
 		name = "Sairae B'Sala" #"Tevos"
+		gender = female
 		portrait = "asari_3"
 		texture = 1
 		hair = 0

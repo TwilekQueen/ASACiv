@@ -59,12 +59,12 @@ entity = {
 }
 entity = {
 	name = "asari_01_SCX_Carrier_bow_M1S2SHB_entity"
-	pdxmesh = "asari_01_empty_mesh"
+	pdxmesh = "asari_01_carrier_weapons_bow_mesh"
 	
-	locator = { name = "medium_gun_01"	position = { 0 1.25 -4 } }
-	locator = { name = "small_gun_01"	position = { 0 1.25 -4 } }
-	locator = { name = "small_gun_02"	position = { 0 1.25 -4 } }
-	locator = { name = "strike_craft_locator_01"	position = { 0 1.25 -4 } }
+	#locator = { name = "medium_gun_01"	position = { 0 1.25 -4 } }
+	#locator = { name = "small_gun_01"	position = { 0 1.25 -4 } }
+	#locator = { name = "small_gun_02"	position = { 0 1.25 -4 } }
+	#locator = { name = "strike_craft_locator_01"	position = { 0 1.25 -4 } }
 }
 
 ############
@@ -161,40 +161,40 @@ entity = {
 
 entity = {
 	name = "asari_01_SCX_Carrier_mid2_L2S4_entity"
-	pdxmesh = "asari_01_empty_mesh"
+	pdxmesh = "asari_01_carrier_weapons_mid2_mesh"
 	
-	locator = { name = "large_gun_01"	position = { 0 1.25 -14 } }
-	locator = { name = "large_gun_02"	position = { 0 1.25 -14 } }
-	locator = { name = "small_gun_01"	position = { 0 1.25 -14 } }
-	locator = { name = "small_gun_02"	position = { 0 1.25 -14 } }
-	locator = { name = "small_gun_03"	position = { 0 1.25 -14 } }
-	locator = { name = "small_gun_04"	position = { 0 1.25 -14 } }
-	locator = { name = "strike_craft_locator_01"	position = { 0 1.25 -14 } }
-	locator = { name = "strike_craft_locator_02"	position = { 0 1.25 -14 } }
+	#locator = { name = "large_gun_01"	position = { 0 1.25 -14 } }
+	#locator = { name = "large_gun_02"	position = { 0 1.25 -14 } }
+	#locator = { name = "small_gun_01"	position = { 0 1.25 -14 } }
+	#locator = { name = "small_gun_02"	position = { 0 1.25 -14 } }
+	#locator = { name = "small_gun_03"	position = { 0 1.25 -14 } }
+	#locator = { name = "small_gun_04"	position = { 0 1.25 -14 } }
+	#locator = { name = "strike_craft_locator_01"	position = { 0 1.25 -14 } }
+	#locator = { name = "strike_craft_locator_02"	position = { 0 1.25 -14 } }
 }
 
 entity = {
 	name = "asari_01_SCX_Carrier_mid2_S4LHB_entity"
-	pdxmesh = "asari_01_empty_mesh"
+	pdxmesh = "asari_01_carrier_weapons_mid2_mesh"
 	
-	locator = { name = "small_gun_01"	position = { 0 1.25 -14 } }
-	locator = { name = "small_gun_02"	position = { 0 1.25 -14 } }
-	locator = { name = "small_gun_03"	position = { 0 1.25 -14 } }
-	locator = { name = "small_gun_04"	position = { 0 1.25 -14 } }
-	locator = { name = "strike_craft_locator_01"	position = { 0 1.25 -14 } }
-	locator = { name = "strike_craft_locator_02"	position = { 0 1.25 -14 } }
+	#locator = { name = "small_gun_01"	position = { 0 1.25 -14 } }
+	#locator = { name = "small_gun_02"	position = { 0 1.25 -14 } }
+	#locator = { name = "small_gun_03"	position = { 0 1.25 -14 } }
+	#locator = { name = "small_gun_04"	position = { 0 1.25 -14 } }
+	#locator = { name = "strike_craft_locator_01"	position = { 0 1.25 -14 } }
+	#locator = { name = "strike_craft_locator_02"	position = { 0 1.25 -14 } }
 }
 
 entity = {
 	name = "asari_01_SCX_Carrier_mid2_M4SHB_entity"
-	pdxmesh = "asari_01_empty_mesh"
+	pdxmesh = "asari_01_carrier_weapons_mid2_mesh"
 	
-	locator = { name = "large_gun_01"	position = { 0 1.25 -14 } }
-	locator = { name = "large_gun_02"	position = { 0 1.25 -14 } }
-	locator = { name = "medium_gun_01"	position = { 0 1.25 -14 } }
-	locator = { name = "medium_gun_02"	position = { 0 1.25 -14 } }
-	locator = { name = "strike_craft_locator_01"	position = { 0 1.25 -14 } }
-	locator = { name = "strike_craft_locator_02"	position = { 0 1.25 -14 } }
+	#locator = { name = "large_gun_01"	position = { 0 1.25 -14 } }
+	#locator = { name = "large_gun_02"	position = { 0 1.25 -14 } }
+	#locator = { name = "medium_gun_01"	position = { 0 1.25 -14 } }
+	#locator = { name = "medium_gun_02"	position = { 0 1.25 -14 } }
+	#locator = { name = "strike_craft_locator_01"	position = { 0 1.25 -14 } }
+	#locator = { name = "strike_craft_locator_02"	position = { 0 1.25 -14 } }
 }
 
 #############

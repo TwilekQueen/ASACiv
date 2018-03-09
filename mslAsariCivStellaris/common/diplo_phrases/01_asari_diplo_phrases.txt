@@ -1,0 +1,681 @@
+### 
+# FROM is the actor ie the initiator of the diplomatic action
+# ROOT is the recipient of the diplomatic action
+
+greetings = {
+	# Asari Republics
+	ASA_ASR_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			NOT = { is_same_species = FROM }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+			FROM = { NOT = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	ASA_ASR_HOSTILE_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	ASA_ASR_HOSTILE_GREETING_03 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			OR = {
+				has_federation = yes
+				has_federation = yes
+			}
+			NOT = { is_in_federation_with = FROM }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	ASA_ASR_DOMINEERING_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_domineering_to = FROM
+			}
+			FROM = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+		}
+	}
+	ASA_ASR_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			has_federation = no
+			has_federation = no
+			NOT = { is_at_war_with = FROM }
+			is_neutral_to = FROM
+		}
+	}
+	ASA_ASR_NEUTRAL_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			OR = {
+				has_federation = yes
+				has_federation = yes
+			}
+			NOT = { is_at_war_with = FROM }
+			is_neutral_to = FROM
+		}
+	}
+	ASA_ASR_NEUTRAL_GREETING_03 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			OR = {
+				has_federation = yes
+				has_federation = yes
+			}
+			NOT = { is_at_war_with = FROM }
+			is_neutral_to = FROM
+		}
+	}
+	ASA_ASR_NEUTRAL_GREETING_04 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			NOT = { is_in_federation_with = FROM }
+			FROM = {
+				OR = {
+					has_ethic = ethic_pacifist
+					has_ethic = ethic_fanatic_pacifist
+				}
+			}
+			NOT = { is_at_war_with = FROM }
+			is_neutral_to = FROM
+		}
+	}
+	ASA_ASR_THREATENED_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			NOT = { is_at_war_with = FROM }
+			is_threatened_to = FROM
+		}
+	}
+	ASA_ASR_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+			FROM = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+		}
+	}
+	ASA_ASR_FRIENDLY_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			OR = {
+				has_federation = yes
+				has_federation = yes
+			}
+			NOT = { is_in_federation_with = FROM }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	ASA_ASR_FRIENDLY_GREETING_03 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			is_in_federation_with = FROM
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	ASA_ASR_FRIENDLY_GREETING_04 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			is_in_federation_with = FROM
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	ASA_ASR_WAR_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			is_at_war_with = FROM
+		}
+	}
+	ASA_ASR_WAR_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			OR = {
+				has_federation = yes
+				has_federation = yes
+			}
+			is_at_war_with = FROM
+			FROM = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+		}
+	}
+	ASA_ASR_WAR_GREETING_03 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			OR = {
+				has_federation = yes
+				has_federation = yes
+			}
+			is_at_war_with = FROM
+		}
+	}
+	ASA_ASR_VASSAL_GREETING_01 = {
+		weight = {
+			weight = 10
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			exists = overlord
+			overlord = { is_same_value = FROM }
+			NOT = { is_at_war_with = FROM }
+			NOT = { is_disloyal_to = FROM }
+		}
+	}
+	ASA_ASR_VASSAL_GREETING_DISLOYAL_01 = {
+		weight = {
+			weight = 10
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			exists = overlord
+			overlord = { is_same_value = FROM }
+			NOT = { is_at_war_with = FROM }
+			is_disloyal_to = FROM
+		}
+	}
+	ASA_ASR_VASSAL_GREETING_DISLOYAL_02 = {
+		weight = {
+			weight = 10
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asr
+			exists = overlord
+			overlord = { is_same_value = FROM }
+			NOT = { is_at_war_with = FROM }
+			is_disloyal_to = FROM
+		}
+	}
+	ASA_ASR_OVERLORD_GREETING_01 = {
+		weight = {
+			weight = 100
+		}
+		trigger = {
+			is_overlord_to = FROM
+			has_ai_personality = personality_asari_ai_asr
+		}
+	}
+	
+	# Asari Corporate Interests
+	ASA_ASI_HOSTILE_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	ASA_ASI_HOSTILE_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	ASA_ASI_HOSTILE_GREETING_03 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	ASA_ASI_HOSTILE_GREETING_04 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	ASA_ASI_DOMINEERING_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_domineering_to = FROM
+			}
+			FROM = { NOT = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	ASA_ASI_NEUTRAL_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			NOT = { is_at_war_with = FROM }
+			is_neutral_to = FROM
+		}
+	}
+	ASA_ASI_NEUTRAL_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			NOT = { is_at_war_with = FROM }
+			is_neutral_to = FROM
+		}
+	}
+	ASA_ASI_NEUTRAL_GREETING_03 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			NOT = { is_at_war_with = FROM }
+			is_neutral_to = FROM
+		}
+	}
+	ASA_ASI_NEUTRAL_GREETING_04 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			FROM = {
+				exists = overlord
+				overlord = { is_same_value = ROOT }
+			}
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	ASA_ASI_THREATENED_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			NOT = { is_at_war_with = FROM }
+			is_threatened_to = FROM
+		}
+	}
+	ASA_ASI_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	ASA_ASI_FRIENDLY_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	ASA_ASI_FRIENDLY_GREETING_03 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	ASA_ASI_FRIENDLY_GREETING_04 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			NOT = { is_same_species = FROM }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	ASA_ASI_FRIENDLY_GREETING_05 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			is_same_species = FROM
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	ASA_ASI_WAR_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			is_at_war_with = FROM
+		}
+	}
+	ASA_ASI_WAR_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			is_at_war_with = FROM
+		}
+	}
+	ASA_ASI_WAR_GREETING_03 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			is_at_war_with = FROM
+		}
+	}
+	ASA_ASI_WAR_GREETING_04 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			is_at_war_with = FROM
+		}
+	}
+	ASA_ASI_VASSAL_GREETING_01 = {
+		weight = {
+			weight = 10
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			exists = overlord
+			overlord = { is_same_value = FROM }
+			NOT = { is_at_war_with = FROM }
+			NOT = { is_disloyal_to = FROM }
+		}
+	}
+	ASA_ASI_VASSAL_GREETING_DISLOYAL_01 = {
+		weight = {
+			weight = 10
+		}
+		trigger = {
+			has_ai_personality = personality_asari_ai_asi
+			exists = overlord
+			overlord = { is_same_value = FROM }
+			NOT = { is_at_war_with = FROM }
+			is_disloyal_to = FROM
+		}
+	}
+	ASA_ASI_OVERLORD_GREETING_01 = {
+		weight = {
+			weight = 100
+		}
+		trigger = {
+			is_overlord_to = FROM
+			has_ai_personality = personality_asari_ai_asi
+		}
+	}
+}
+
+action_declare_war = {
+	propose = {
+	# Asari Republics
+		ASA_ASR_DOW_PROPOSE_01 = {
+			weight = { weight = 20 }
+			trigger = { FROM = { has_ai_personality = asari_ai_asr } }
+		}
+	# Asari Corporate Interests
+		ASA_ASI_DOW_PROPOSE_01 = {
+			weight = { weight = 20 }
+			trigger = { FROM = { has_ai_personality = asari_ai_asr } }
+		}
+	}
+	accept = {
+	# Asari Republics
+		ASA_ASR_DOW_ACCEPT_01 = {
+			trigger = {
+				FROM = { has_ai_personality = asari_ai_asr }
+				OR = {
+					is_hostile_to = FROM
+					is_domineering_to = FROM
+					is_unfriendly_to = FROM
+				}
+			}
+		}
+		ASA_ASR_DOW_ACCEPT_02 = {
+			trigger = {
+				FROM = { has_ai_personality = asari_ai_asr }
+				OR = {
+					is_neutral_to = FROM
+					is_threatened_to = FROM
+				}
+			}
+		}
+		ASA_ASR_DOW_ACCEPT_03 = {
+			trigger = {
+				FROM = { has_ai_personality = asari_ai_asr }
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+
+	# Asari Corporate Interests
+		ASA_ASI_DOW_ACCEPT_01 = {
+			trigger = {
+				FROM = { has_ai_personality = asari_ai_asi }
+				OR = {
+					is_hostile_to = FROM
+					is_domineering_to = FROM
+					is_unfriendly_to = FROM
+				}
+			}
+		}
+		ASA_ASI_DOW_ACCEPT_02 = {
+			trigger = {
+				FROM = { has_ai_personality = asari_ai_asi }
+				OR = {
+					is_neutral_to = FROM
+					is_threatened_to = FROM
+				}
+			}
+		}
+		ASA_ASI_DOW_ACCEPT_03 = {
+			trigger = {
+				FROM = { has_ai_personality = asari_ai_asi }
+				OR = {
+					is_friendly_to = FROM
+					is_cordial_to = FROM
+					is_protective_to = FROM
+				}
+			}
+		}
+	}
+}
+
+action_insult = {
+	propose = {
+		ASA_ASR_01_INSULT_PROPOSE = {
+			weight = { weight = 20 }
+			trigger = {
+				FROM = {
+					OR = {
+						has_country_flag = asari_asr
+						has_ai_personality = asari_ai_asr
+					}
+				}
+				FROM = {
+					NOT = { is_same_species = ROOT }
+					NOT = { is_subspecies = ROOT }
+				}
+			}
+		}
+		
+	# Asari Corporate Interests
+		ASA_ASI_01_INSULT_PROPOSE = {
+			weight = { weight = 20 }
+			trigger = {
+				FROM = {
+					OR = {
+						has_country_flag = asari_asi
+						has_ai_personality = asari_ai_asi
+					}
+				}
+				FROM = {
+					NOT = { is_same_species = ROOT }
+					NOT = { is_subspecies = ROOT }
+				}
+			}
+		}
+	}
+
+	accept = {
+		ASA_ASR_01_INSULT_ACCEPT = {
+			weight = { weight = 20 }
+			trigger = {
+				ROOT = {
+					OR = {
+						has_country_flag = asari_asr
+						has_ai_personality = asari_ai_asr
+					}
+				}
+			}
+		}
+		
+	# Asari Corporate Interests
+		ASA_ASI_01_INSULT_ACCEPT = {
+			weight = { weight = 20 }
+			trigger = {
+				ROOT = {
+					OR = {
+						has_country_flag = asari_asi
+						has_ai_personality = asari_ai_asi
+					}
+				}
+			}
+		}
+	}
+}

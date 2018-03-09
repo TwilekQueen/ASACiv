@@ -179,6 +179,18 @@ objectTypes = {
 		scale = 1.2
 	}
 	
+	pdxmesh = {
+		name = "asari_01_carrier_weapons_bow_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_carrier_weapons_bow.mesh"
+		scale = 1.2
+	}
+	
+	pdxmesh = {
+		name = "asari_01_carrier_weapons_mid2_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_carrier_weapons_mid2.mesh"
+		scale = 1.2
+	}
+	
 	#########################
 	#### NEW BATTLESHIPS ####
 	#########################
@@ -194,6 +206,8 @@ objectTypes = {
 		file = "gfx/models/ships/asari_01/asari_01_battleship2.mesh"	#CHERRYH SHUFFLE: asari_01_supercapital2.mesh -> asari_01_battleship2.mesh
 		scale = 0.9
 	}
+	
+	## NOTE: Battleship weapons mesh has been scaled for battleship1 at scale = 1.5 and battleship2 at scale = 0.9!
 	
 	pdxmesh = {
 		name = "asari_01_battleships_weapons_bow_mesh"
@@ -233,6 +247,12 @@ objectTypes = {
 		name = "asari_01_supercapital3_mesh"
 		file = "gfx/models/ships/asari_01/asari_01_supercapital3.mesh"
 		scale = 0.7
+	}
+	
+	pdxmesh = {
+		name = "asari_01_dreadnought_weapons_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_dreadnought_weapons.mesh"	#Weapon setup optimised for Supercapital 1 and 3 and applicable to SCX Dreadnought's bow and stern
+		scale = 1.0
 	}
 	
 	############################
@@ -308,7 +328,7 @@ objectTypes = {
 	#}
 	#}
 	
-	#######  cruiser frame  #######
+	#######  Cruiser frame  #######
 	
 	pdxmesh = {
 		name = "asari_01_cruiser_frame_mesh"
@@ -321,7 +341,7 @@ objectTypes = {
 		scale = 1.0
 	}
 	
-	#######  Battleship frame  #######
+	#######  Battleship frame (3 Sections)  #######
 	
 	pdxmesh = {
 		name = "asari_01_battleship_frame_mesh"
@@ -329,6 +349,17 @@ objectTypes = {
 				animation = { id = "idle"			type = "asari_01_battleship_frame_idle_animation" }
 				animation = { id = "death"			type = "asari_01_battleship_frame_death_animation" }
 				animation = { id = "attack"			type = "asari_01_battleship_frame_idle_animation" }				
+		scale = 1.0
+	}
+	
+	#######  Dreadnought frame (4 Sections)  #######
+	
+	pdxmesh = {
+		name = "asari_01_dreadnought_frame_mesh"
+		file = "gfx/models/ships/asari_01/asari_01_dreadnought_frame.mesh"
+				animation = { id = "idle"			type = "asari_01_dreadnought_frame_idle_animation" }
+				animation = { id = "death"			type = "asari_01_dreadnought_frame_death_animation" }
+				animation = { id = "attack"			type = "asari_01_dreadnought_frame_idle_animation" }				
 		scale = 1.0
 	}
 	

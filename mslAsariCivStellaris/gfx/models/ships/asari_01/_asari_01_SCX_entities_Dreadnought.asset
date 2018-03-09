@@ -9,7 +9,7 @@
 
 entity = {
 	name = "asari_01_SCX_Dreadnought_entity"
-	pdxmesh = "asari_01_battleship_frame_mesh"
+	pdxmesh = "asari_01_dreadnought_frame_mesh"
 	
 	locator = { name = "part4"	position = { 0 2 0 } }
 	
@@ -77,10 +77,10 @@ entity = {
 
 entity = {
 	name = "asari_01_SCX_Dreadnought_bow_XL1_entity"
-	pdxmesh = "asari_01_empty_mesh"
+	pdxmesh = "asari_01_dreadnought_weapons_mesh"
 	
-	locator = { name = "xl_gun_01"	position = { 0 1.75 4 } }
-	locator = { name = "xl_gun_02"	position = { 0 1.75 4 } }
+	#locator = { name = "xl_gun_01"	position = { 0 1.75 4 } }
+	#locator = { name = "xl_gun_02"	position = { 0 1.75 4 } }
 	#locator = { name = "titan_gun_01"	position = { 0 1.75 4 } }
 }
 
@@ -295,17 +295,17 @@ entity = {
 
 entity = {
 	name = "asari_01_SCX_Dreadnought_stern_L1_entity"
-	pdxmesh = "asari_01_empty_mesh"
+	pdxmesh = "asari_01_dreadnought_weapons_mesh"
 	
-	locator = { name = "large_gun_01"	position = { 0 1.75 -8 } }
+	#locator = { name = "large_gun_01"	position = { 0 1.75 -8 } }
 }
 
 entity = {
 	name = "asari_01_SCX_Dreadnought_stern_M2_entity"
-	pdxmesh = "asari_01_empty_mesh"
+	pdxmesh = "asari_01_dreadnought_weapons_mesh"
 	
-	locator = { name = "medium_gun_01"	position = { 0 1.75 -8 } }
-	locator = { name = "medium_gun_02"	position = { 0 1.75 -8 } }
+	#locator = { name = "medium_gun_01"	position = { 0 1.75 -8 } }
+	#locator = { name = "medium_gun_02"	position = { 0 1.75 -8 } }
 }
 entity = {
 	name = "asari_01_SCX_Dreadnought_stern_S4_entity"

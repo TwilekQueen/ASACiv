@@ -1,4 +1,4 @@
-name="Mass Effect - The Asari Civilisation"
+name="Mass Effect Civilisations - Asari"
 path="mod/mslAsariCivStellaris"
 tags={
 	"Species"

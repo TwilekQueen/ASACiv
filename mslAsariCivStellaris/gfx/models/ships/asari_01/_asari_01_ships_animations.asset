@@ -33,6 +33,16 @@ animation = {
 }
 
 animation = {
+	name = "asari_01_dreadnought_frame_death_animation"
+	file = "asari_01_dreadnought_frame_death.anim"
+}
+
+animation = {
+	name = "asari_01_dreadnought_frame_idle_animation"
+	file = "asari_01_dreadnought_frame_idle.anim"
+}
+
+animation = {
 	name = "asari_01_construction_idle_animation"
 	file = "asari_01_construction_idle.anim"
 }
@@ -46,9 +56,3 @@ animation = {
 	name = "asari_01_construction_working_animation"
 	file = "asari_01_construction_working_start.anim"
 }
-
-
-
-
-
-
