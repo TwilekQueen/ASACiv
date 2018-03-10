@@ -1,0 +1,88 @@
+﻿l_german:
+ #Note: insult_propose uses reverse FROM and ROOT
+
+ ####################################
+ # Asari Republics
+ ####################################
+ personality_asari_ai_asr:0 "Diplomatic Architects"
+ personality_asari_ai_asr_desc:0 "Diplomatic Architects naturally settle into the role of mediatiors, finding common language and building bridges between nations, species and cultures. Their beguiling influence has a way of worming itself into alien societies and slowly reshaping them to better fit the Architects' perfect design."
+
+ # AI Personality-based replies
+ # Greetings
+ ASA_ASR_HOSTILE_GREETING_01:0 "Do not mistake our gentleness for weakness. Some of the loveliest flowers grow throns to survive in the wild. Try to pluck them... and you might just hurt yourself."
+ ASA_ASR_HOSTILE_GREETING_02:0 "How [From.GetSpeciesPlural] tolerate such uncooperative government is beyond me..."
+ ASA_ASR_HOSTILE_GREETING_03:0 "The [Root.GetAllianceName]'s laws ensure a lawful and prosperous future for the civilised galaxy. It is so unfortunate that [From.GetName] has set on a course that involves neither civilisation nor future."
+ ASA_ASR_DOMINEERING_GREETING_01:0 "Our desire to develop closer relations with [Root.GetName] is only outweighted by your refusal to accept our good will, [From.GetRulerTitle]. That said, we are currently debating whether your approval is truly necessary."
+ ASA_ASR_NEUTRAL_GREETING_01:0 "We are still in the early days of galactic history. The sooner we embrace cooperation, the sooner we can advance to greater things and new frontiers."
+ ASA_ASR_NEUTRAL_GREETING_02:0 "As representatives of the [Root.GetAllianceName], diplomacy is our first priority."
+ ASA_ASR_NEUTRAL_GREETING_03:0 "The [Root.GetAllianceName] ensures independence where it matters through interdependence where it's needed."
+ ASA_ASR_NEUTRAL_GREETING_04:0 "You have taken the first step to a peaceful galaxy by rejecting violence, but lasting peace can only be achieved by reconciling our differences."
+ ASA_ASR_THREATENED_GREETING_01:0 "[From.GetRulerTitle]. Is this some kind of game? Are you calling us just so you can cut us off again?"
+ ASA_ASR_FRIENDLY_GREETING_01:0 "Diplomacy should be the cornerstone of all interstellar societies. The fact that [From.GetRulerName] appreciates this is surely the sign of a wise leader."
+ ASA_ASR_FRIENDLY_GREETING_02:0 "The [Root.GetAllianceName] is fortunate to share the galactic community with [From.GetName]. We can only hope that in time we will grow even closer together."
+ ASA_ASR_FRIENDLY_GREETING_03:0 "The [Root.GetAllianceName] would be incomplete without [From.GetName]. The galactic society we are creating together will be perfect."
+ ASA_ASR_FRIENDLY_GREETING_04:0 "Our accords today will be remembered as part of the great project of building the [Root.GetAllianceName], the future of the galaxy."
+ ASA_ASR_WAR_GREETING_01:0 "Have you faced an [Root.GetSpeciesAdj] commando unit before? Few [From.GetSpeciesPlural] have. I hope you consider surrender before it comes to that."
+ ASA_ASR_WAR_GREETING_02:0 "It sickens me to see that the [From.GetAdj] government would drag its people into a war against the [Root.GetAllianceName] and the safe, prosperous, civilised galaxy it represents."
+ ASA_ASR_WAR_GREETING_03:0 "The [Root.GetAllianceName] stands united against the [From.GetSpeciesAdj] threat."
+ 
+ ASA_ASR_VASSAL_GREETING_01:0 "Do not be alarmed by the dissenting voices of uncertinty you may have heard amongst our citizens. Let us instead talk about how we might bring our respective people together! We have some proposals for you to review if you please..."
+ ASA_ASR_VASSAL_GREETING_DISLOYAL_01:0 "[From.GetSpeciesAdj] directives are being followed to the letter and according to schedule. That's what you wanted to hear, was it not? Is there anything else you would like me to say?"
+ ASA_ASR_VASSAL_GREETING_DISLOYAL_02:0 "The arrangement between us is just an unpleasant necessity, it's not because we- ugh... Just don't get the wrong idea."
+ ASA_ASR_OVERLORD_GREETING_01:0 "[From.GetName] should have no cause for concern. With our guidance, [From.GetSpeciesNamePlural] will in time reach the same heights as us."
+ 
+ # Actions
+ ASA_ASR_DOW_PROPOSE_01:0 "You forced our hand, and now you will feel what it's like when the gloves are off, [From.GetRulerTitle]."
+ 
+ ASA_ASR_DOW_ACCEPT_01:0 "*Sigh* We are not angry. Or even surprised. Just... disappointed."
+ ASA_ASR_DOW_ACCEPT_02:0 "Whatever your reasons are, they are misguided. [From.GetName] needs to be stopped for its own good."
+ ASA_ASR_DOW_ACCEPT_03:0 "Why... would you do such a thing? What happened to our relations? How long in planning was this betrayal? No matter. Once we have restored the peace, we will cure whatever sickness has taken root in the [From.GetName]"
+ 
+ # Insults
+ ASA_ASR_01_INSULT_PROPOSE:0 "Credit where it's due, it is mostly thanks to the [From.GetName] that our citizens' interest in foreign relations has been positively *soaring* lately. They are both deeply concerned... and very entertained by your nation's constant fumbling."
+
+ ASA_ASR_01_INSULT_ACCEPT:0 "Do not waste my time again, [From.GetRulerTitle]. I fail to find it amusing."
+ 
+ ####################################
+ # Asari Corporate Interests
+ ####################################
+ personality_asari_ai_asi:0 "Corporate Conrnucopia"
+ personality_asari_ai_asi_desc:0 "Corporate Cornucopia is a decadent capitalist society built upon lax business regulations and rampant celebrity culture. Its quadrillionaire elite seek to drive the cutting edge of technological innovation and wrap the galactic economy around their fingers by any means they can get away with."
+
+ # AI Personality-based replies
+ # Greetings
+ ASA_ASI_HOSTILE_GREETING_01:0 "I'm about to have an interview and photoshoot appointment for my Nos Astra Times Galaxy's Sexiest CEOs feature, so whatever you are calling me to tell, could you just give me the two-minute version? I would love that, thank you."
+ ASA_ASI_HOSTILE_GREETING_02:0 "§Y<<NOTICE>>§ Live channel to the office of [Root.GetRulerTitle] [Root.GetRulerName] is unavailable at this time. However if you wish to leave a message, be assured that it will be relayed to the [Root.GetRulerTitle]'s PR department secretary's assistant's VI assistant and processed at her earliest convenience. Thank you for your understanding, we look forward to hearing from you again!"
+ ASA_ASI_HOSTILE_GREETING_03:0 "Every minute of my time you waste costs the company twelve hundred credits. I will keep a running tally."
+ ASA_ASI_HOSTILE_GREETING_04:0 "I am in the middle of nine things, all of them annoying. Be a darling and make it eight for me by pressing that disconnect button, would you?"
+ ASA_ASI_DOMINEERING_GREETING_01:0 "I have been toying with the idea of acquiring [Root.GetName]. Of course, some layoffs after the merger are to be expected but... you know how it goes."
+ ASA_ASI_NEUTRAL_GREETING_01:0 "Those who cannot be profited with must be profited from. Consider carefully to which category you'd like to belong."
+ ASA_ASI_NEUTRAL_GREETING_02:0 "We offer only the best deals for new associates. Let's not get too bogged down with the details; you paint the broad strokes and we'll draft the contract."
+ ASA_ASI_NEUTRAL_GREETING_03:0 "Please keep in mind that [From.GetName] is beholden only to its shareholders. Respect our autonomy and do not interfere with our business, and [Root.Capital.GetName] will provide anything you need. And many things you don't, but will want more of once you try them."
+ ASA_ASI_NEUTRAL_GREETING_04:0 "Don't get too bold in your requests. When we downsize, subsidiaries are always the first to go."
+ ASA_ASI_THREATENED_GREETING_01:0 "We may be willing to compromise our interests somewhat to accommodate your strong position."
+ ASA_ASI_FRIENDLY_GREETING_01:0 "The key to a good partnership is to be just honest enough with each other to make the lies we tell to the others line up."
+ ASA_ASI_FRIENDLY_GREETING_02:0 "We're willing to trust you, and more exceptionally, we're willing to be trustworthy."
+ ASA_ASI_FRIENDLY_GREETING_03:0 "There's no reason why both of us can't profit. Now all we need is to find someone to take the losses."
+ ASA_ASI_FRIENDLY_GREETING_04:0 "A pleasure doing business with you, [From.GetRulerTitle]. I always enjoy mutually profitable intercourse.\n\n...\n\nWhy do I have a feeling it didn't translate well..."
+ ASA_ASI_FRIENDLY_GREETING_05:0 "A pleasure doing business with you, [From.GetRulerTitle]. I always enjoy mutually profitable intercourse."
+ ASA_ASI_WAR_GREETING_01:0 "Have you faced an [Root.GetSpeciesAdj] commando unit before? Few [From.GetSpeciesPlural] have. I'll make sure you have the opportunity before it's over."
+ ASA_ASI_WAR_GREETING_02:0 "Time is credits and this feels like SUCH a waste of both. Is your surrender declaration ready yet? Do you need help with it? I could recommend several galaxy-renowned professionals. And just for you... I'd even cover their usual fee."
+ ASA_ASI_WAR_GREETING_03:0 "There is no reason for either of us to take this conflict personally; it's simply about the bottom line."
+ ASA_ASI_WAR_GREETING_04:0 "This is not my first hostile takeover. I always get what I want, no matter the price."
+ 
+ ASA_ASI_VASSAL_GREETING_01:0 "The [Root.GetName] always strives to deliver the best service to our holding company."
+ ASA_ASI_VASSAL_GREETING_DISLOYAL_01:0 "Our patience with your mismanagement is wearing thin. Do you intend to run the [Root.GetName] into the ground?"
+ ASA_ASI_OVERLORD_GREETING_01:0 "We are receiving you, [From.GetSpeciesName]. Are there any policies you would like to review?"
+ 
+ # Actions
+ ASA_ASI_DOW_PROPOSE_01:0 "You seem to have an issue with stray scrap littering your space. Our fleet is on its way to clear it out for you."
+ 
+ ASA_ASI_DOW_ACCEPT_01:0 "Mmm... An interesting trade proposal... Very well, we shall deliver your shipment of munitions straight to your doorstep! You won't be disappointed."
+ ASA_ASI_DOW_ACCEPT_02:0 "Getting dragged into war is terrible for business... So you can be sure we will bill you for every credit lost. And interest!"
+ ASA_ASI_DOW_ACCEPT_03:0 "Awww.. But I suppose all good partnerships come to an end. The important thing is to embrace the time that you have to spend with the fish."
+ 
+ # Insults
+ ASA_ASI_01_INSULT_PROPOSE:0 "If this whole [Root.GetRulerTitle] gig doesn't pan out, have you considered indentured servitude for one of the companies on [From.Capital.GetName]?"
+ 
+ ASA_ASI_01_INSULT_ACCEPT:0 "Ah... It brings a sense of order and stability to my universe knowing that you still have nothing of value to offer."
