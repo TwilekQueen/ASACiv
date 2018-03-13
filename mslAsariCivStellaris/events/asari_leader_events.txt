@@ -43,6 +43,7 @@ country_event = {
 	trigger = {
 		from = {
 			has_trait = leader_trait_resilient
+			species = { has_trait = trait_asari_age }
 		}
 	}
 
