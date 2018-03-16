@@ -65,12 +65,11 @@ asari_names = {
 
 		military_station_small = {
 			Lucedrasha Janniran Estharae Asey Atezea Irlik Unraux Atenus Norrinia Nisenth Dayrtia Ateava Priiaga Sanariir
-		}
-		military_station_medium = {
 			Diessse Iessaor Tevorly Sedeburo Aniyux Gaor Seyellshi Sal'mo Ar'shase Daliala Iessaze Nulekaha Letilse Surime
-		}
-		military_station_large = {
 			Lenoramey Telithmia Kysi Chaumhin Tevmetia Elezme Salitho Atruve Eminaya Salyxaa Helili Liseesrae Geninphia Sedeeri
+		}
+		ion_cannon = {
+			Ionessa
 		}
 		
 		#SCX classes

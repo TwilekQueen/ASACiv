@@ -9,7 +9,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			NOT = { is_same_species = FROM }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -24,7 +24,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -37,7 +37,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			OR = {
 				has_federation = yes
 				has_federation = yes
@@ -55,7 +55,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_domineering_to = FROM
@@ -68,7 +68,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			has_federation = no
 			has_federation = no
 			NOT = { is_at_war_with = FROM }
@@ -80,7 +80,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			OR = {
 				has_federation = yes
 				has_federation = yes
@@ -94,7 +94,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			OR = {
 				has_federation = yes
 				has_federation = yes
@@ -108,7 +108,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			NOT = { is_in_federation_with = FROM }
 			FROM = {
 				OR = {
@@ -125,7 +125,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			NOT = { is_at_war_with = FROM }
 			is_threatened_to = FROM
 		}
@@ -135,7 +135,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_friendly_to = FROM
@@ -150,7 +150,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			OR = {
 				has_federation = yes
 				has_federation = yes
@@ -169,7 +169,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			is_in_federation_with = FROM
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -184,7 +184,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			is_in_federation_with = FROM
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -199,7 +199,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			is_at_war_with = FROM
 		}
 	}
@@ -208,7 +208,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			OR = {
 				has_federation = yes
 				has_federation = yes
@@ -222,7 +222,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			OR = {
 				has_federation = yes
 				has_federation = yes
@@ -235,7 +235,7 @@ greetings = {
 			weight = 10
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			exists = overlord
 			overlord = { is_same_value = FROM }
 			NOT = { is_at_war_with = FROM }
@@ -247,7 +247,7 @@ greetings = {
 			weight = 10
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			exists = overlord
 			overlord = { is_same_value = FROM }
 			NOT = { is_at_war_with = FROM }
@@ -259,7 +259,7 @@ greetings = {
 			weight = 10
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 			exists = overlord
 			overlord = { is_same_value = FROM }
 			NOT = { is_at_war_with = FROM }
@@ -272,7 +272,7 @@ greetings = {
 		}
 		trigger = {
 			is_overlord_to = FROM
-			has_ai_personality = personality_asari_ai_asr
+			has_ai_personality = asari_ai_asr
 		}
 	}
 	
@@ -282,7 +282,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -295,7 +295,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -308,7 +308,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -321,7 +321,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -334,7 +334,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_domineering_to = FROM
@@ -347,7 +347,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			NOT = { is_at_war_with = FROM }
 			is_neutral_to = FROM
 		}
@@ -357,7 +357,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			NOT = { is_at_war_with = FROM }
 			is_neutral_to = FROM
 		}
@@ -367,7 +367,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			NOT = { is_at_war_with = FROM }
 			is_neutral_to = FROM
 		}
@@ -377,7 +377,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			FROM = {
 				exists = overlord
 				overlord = { is_same_value = ROOT }
@@ -390,7 +390,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			NOT = { is_at_war_with = FROM }
 			is_threatened_to = FROM
 		}
@@ -400,7 +400,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_friendly_to = FROM
@@ -414,7 +414,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_friendly_to = FROM
@@ -428,7 +428,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_friendly_to = FROM
@@ -442,7 +442,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			NOT = { is_same_species = FROM }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -457,7 +457,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			is_same_species = FROM
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -472,7 +472,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			is_at_war_with = FROM
 		}
 	}
@@ -481,7 +481,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			is_at_war_with = FROM
 		}
 	}
@@ -490,7 +490,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			is_at_war_with = FROM
 		}
 	}
@@ -499,7 +499,7 @@ greetings = {
 			weight = 3
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			is_at_war_with = FROM
 		}
 	}
@@ -508,7 +508,7 @@ greetings = {
 			weight = 10
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			exists = overlord
 			overlord = { is_same_value = FROM }
 			NOT = { is_at_war_with = FROM }
@@ -520,7 +520,7 @@ greetings = {
 			weight = 10
 		}
 		trigger = {
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 			exists = overlord
 			overlord = { is_same_value = FROM }
 			NOT = { is_at_war_with = FROM }
@@ -533,7 +533,7 @@ greetings = {
 		}
 		trigger = {
 			is_overlord_to = FROM
-			has_ai_personality = personality_asari_ai_asi
+			has_ai_personality = asari_ai_asi
 		}
 	}
 }
