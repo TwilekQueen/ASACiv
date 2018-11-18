@@ -1,0 +1,13 @@
+d_zro_thessia_deposit = {
+	resources = { 
+		physics_research = 2
+		sr_zro = 6
+	}
+	station = shipclass_research_station
+	orbital_weight = {
+		weight = 0
+	}	
+	drop_weight = {
+		weight = 0		
+	}
+}
