@@ -82,6 +82,13 @@ asr_system_initializer = {
 		init_effect = {
 			generate_start_buildings_and_blockers = yes
 		}
+		
+		init_effect = {
+    			orbital_deposit_tile = {
+				clear_deposits = yes
+				add_deposit = d_zro_thessia_deposit
+        		}
+    		}
 	}
 	
 	planet = {
